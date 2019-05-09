@@ -1,0 +1,52 @@
+@import './partials';
+
+/************ARE YOUR READY? **********/
+
+#ready {
+    @extend %centered;
+    margin-top: 2.5em;
+    justify-content: space-between;
+
+    & div:first-child {
+        line-height: 1em;
+        font-size: .9em;
+        flex: 1;
+        & > h2:first-child {
+            color: $primary-purple;
+        }
+        & > h2:last-child {
+        color: $darker-purple;
+        }
+    }
+
+    & div:nth-child(2){
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        
+        flex: 1;
+        width: 100%;
+        & > .contact-button {
+            // @extend not working not working after file reoganization; fix later
+            // @extend %create-button;
+            // @extend %button-shared;
+
+            color: white;
+            border-radius: 10px;
+            border: none;
+            transition-duration: 1s;
+
+            height: 40px;
+            display: block;
+            font-size: .75em;
+            background-color: white;
+            margin: 2em auto;
+
+            border: 1px solid $light-color;
+            color: $main-text;
+            box-shadow: 1px 3px 5px 1px $light-text;
+            width: 120px;
+        }
+    }
+
+}

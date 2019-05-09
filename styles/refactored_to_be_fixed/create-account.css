@@ -1,10 +1,19 @@
-.create-button, .contact-button {
+.create-button {
   background-color: #81d398;
   color: white;
   border-radius: 10px;
   border: none;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+}
+
+.create-button {
+  background-color: #726fdf;
+  display: block;
+  width: 180px;
+  height: 40px;
+  font-size: .75em;
+  margin: 2em auto;
 }
 
 #create-account {
@@ -32,23 +41,5 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.create-button, .contact-button {
-  background-color: #726fdf;
-  display: block;
-  width: 180px;
-  height: 40px;
-  font-size: .75em;
-  margin: 2em auto;
-}
-
-.contact-button {
-  background-color: white;
-  border: 1px solid #fcfcfd;
-  color: #5e5d5d;
-  -webkit-box-shadow: 1px 3px 5px 1px #8f8f8f;
-          box-shadow: 1px 3px 5px 1px #8f8f8f;
-  width: 120px;
 }
 /*# sourceMappingURL=create-account.css.map */

@@ -1,0 +1,70 @@
+#ready {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/************ARE YOUR READY? **********/
+#ready {
+  margin-top: 2.5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#ready div:first-child {
+  line-height: 1em;
+  font-size: .9em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#ready div:first-child > h2:first-child {
+  color: #726fdf;
+}
+
+#ready div:first-child > h2:last-child {
+  color: #7552e3;
+}
+
+#ready div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+}
+
+#ready div:nth-child(2) > .contact-button {
+  color: white;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  height: 40px;
+  display: block;
+  font-size: .75em;
+  background-color: white;
+  margin: 2em auto;
+  border: 1px solid #fcfcfd;
+  color: #5e5d5d;
+  -webkit-box-shadow: 1px 3px 5px 1px #8f8f8f;
+          box-shadow: 1px 3px 5px 1px #8f8f8f;
+  width: 120px;
+}
+/*# sourceMappingURL=ready.css.map */

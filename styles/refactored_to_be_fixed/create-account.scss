@@ -1,0 +1,18 @@
+@import './partials';
+
+/******************CREATE ACCOUNT*************************/
+
+#create-account {
+    @extend %centered;
+    margin: 2em 6em;
+    text-align: center;
+    line-height: 1.4em;
+    color: $main-text;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-button{
+    @extend %create-button;
+}
+
