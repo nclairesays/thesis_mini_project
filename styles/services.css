@@ -1,0 +1,83 @@
+#our-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/******************OUR SERVICES*************************/
+#our-services > div {
+  font-size: 1.3em;
+}
+
+#our-services > div:after {
+  border-bottom: 1px solid #5e5d5d;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  padding-bottom: .2em;
+  margin-bottom: 1.3em;
+  border-bottom: 1px solid black;
+}
+
+.services-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.card {
+  width: 48%;
+  height: 120px;
+  margin: .25em .25em;
+  background-color: #fcfcfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  font-size: .8em;
+  color: #8f8f8f;
+  border-radius: 10px;
+  border: 1px solid #5e5d5d;
+}
+
+.card img {
+  height: 70px;
+  width: 70px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.card img:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+.card span {
+  margin: 0 10px;
+}
+
+.card span h4 {
+  line-height: 0;
+}
+/*# sourceMappingURL=services.css.map */

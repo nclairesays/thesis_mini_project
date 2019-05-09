@@ -1,0 +1,64 @@
+@import './partials';
+
+
+/******************OUR SERVICES*************************/
+
+#our-services {
+    @extend %centered;
+
+    & > div {
+        font-size: 1.3em;
+
+        &:after {
+            border-bottom: 1px solid $main-text;
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 40%;
+            padding-bottom: .2em;
+            margin-bottom: 1.3em;
+            border-bottom: 1px solid black;
+        }
+    }
+
+}
+
+.services-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+  
+.card {
+    width: 48%;
+    height: 120px;
+    margin: .25em .25em;
+    background-color: $light-color;
+    display: flex;
+    padding: 60px 0;
+    align-items: center;
+    text-align: left;
+    font-size: .8em;
+    color: $light-text;
+    border-radius: 10px;
+    border: 1px solid $main-text;
+
+    & img {
+        height: 70px;
+        width: 70px;
+        transition-duration: 1s;
+
+        &:hover {
+            transform: translateX(5px);
+        }
+    }
+
+    & span {
+        margin: 0 10px;
+        & h4 {
+            line-height: 0;
+        }
+    }
+}

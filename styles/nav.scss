@@ -1,0 +1,52 @@
+@import './partials';
+
+/************** NAVIGATION ****************/
+
+nav {
+    @extend %padding-shared;
+    @extend %centered;
+
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    z-index: 10;
+
+    #nav-logo {
+        color: white;
+        font-size: 1.5em;
+    }
+
+    #nav-list {
+        text-align: center;
+            & ul {
+                padding-inline-start: 0;
+            }
+
+            & li {
+                cursor: pointer;
+                width: 90px;
+                display: inline-block;
+                padding: 3px 0;
+                list-style-type: none;
+
+                & a  {
+                    text-decoration: none;
+                    color: white;
+                    transition-duration: 1s;
+                    &:hover {
+                        color: $accent-green;
+                    }
+                }
+            }
+
+            & button {
+                @extend %button-shared;
+                width: 120px;
+                padding: 10px 0;
+                font-size: 1em;
+            }
+    }
+}

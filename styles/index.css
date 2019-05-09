@@ -5,7 +5,7 @@
           transform-origin: top left;
 }
 
-nav .nav-list button, .banner-content form button, .create-button, .contact-button {
+nav #nav-list button, .banner-content form button, .create-button, .contact-button {
   background-color: #81d398;
   color: white;
   border-radius: 10px;
@@ -18,7 +18,7 @@ main, nav {
   padding: 0 8em;
 }
 
-nav, #banner-bg-2, #home, #banner-bg-3, #create-account, #ready, #our-services {
+nav, #banner-bg-2, #home, #banner-bg-3, #create-account, #our-services, #ready {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,6 +58,38 @@ button:hover {
           box-sizing: border-box;
 }
 
+#banner-bg-1, #banner-bg-2, #banner-bg-3 {
+  width: 100vw;
+  position: absolute;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+nav #nav-list button, .banner-content form button, .create-button, .contact-button {
+  background-color: #81d398;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+main, nav {
+  padding: 0 8em;
+}
+
+nav, #banner-bg-2, #home, #banner-bg-3, #create-account, #our-services, #ready {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /************** NAVIGATION ****************/
 nav {
   -webkit-box-pack: justify;
@@ -71,16 +103,21 @@ nav {
   z-index: 10;
 }
 
-nav .nav-logo {
+nav #nav-logo {
   color: white;
   font-size: 1.5em;
 }
 
-nav .nav-list {
+nav #nav-list {
   text-align: center;
 }
 
-nav .nav-list li {
+nav #nav-list ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+nav #nav-list li {
   cursor: pointer;
   width: 90px;
   display: inline-block;
@@ -88,21 +125,53 @@ nav .nav-list li {
   list-style-type: none;
 }
 
-nav .nav-list li a {
+nav #nav-list li a {
   text-decoration: none;
   color: white;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
 
-nav .nav-list li a:hover {
+nav #nav-list li a:hover {
   color: #81d398;
 }
 
-nav .nav-list button {
+nav #nav-list button {
   width: 120px;
   padding: 10px 0;
   font-size: 1em;
+}
+
+#banner-bg-1, #banner-bg-2, #banner-bg-3 {
+  width: 100vw;
+  position: absolute;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+nav #nav-list button, .banner-content form button, .create-button, .contact-button {
+  background-color: #81d398;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+main, nav {
+  padding: 0 8em;
+}
+
+nav, #banner-bg-2, #home, #banner-bg-3, #create-account, #our-services, #ready {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /********* BANNER ****************/
@@ -228,6 +297,39 @@ nav .nav-list button {
 #learn-more > a > img:hover {
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
+  cursor: pointer;
+}
+
+#banner-bg-1, #banner-bg-2, #banner-bg-3 {
+  width: 100vw;
+  position: absolute;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+nav #nav-list button, .banner-content form button, .create-button, .contact-button {
+  background-color: #81d398;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+main, nav {
+  padding: 0 8em;
+}
+
+nav, #banner-bg-2, #home, #banner-bg-3, #create-account, #our-services, #ready {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /******************CREATE ACCOUNT*************************/
@@ -263,33 +365,36 @@ nav .nav-list button {
   width: 120px;
 }
 
-/************ARE YOUR READY? **********/
-#ready {
-  margin-top: 2.5em;
+#banner-bg-1, #banner-bg-2, #banner-bg-3 {
+  width: 100vw;
+  position: absolute;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
 }
 
-#ready div:first-child {
-  line-height: .9em;
-  font-size: .9em;
+nav #nav-list button, .banner-content form button, .create-button, .contact-button {
+  background-color: #81d398;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
-#ready div:first-child > h2:first-child {
-  color: #726fdf;
+main, nav {
+  padding: 0 8em;
 }
 
-#ready div:first-child > h2:last-child {
-  line-height: 1em;
-  color: #7552e3;
-}
-
-#ready div:nth-child(2) {
+nav, #banner-bg-2, #home, #banner-bg-3, #create-account, #our-services, #ready {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /******************OUR SERVICES*************************/
@@ -363,6 +468,99 @@ nav .nav-list button {
   line-height: 0;
 }
 
+#banner-bg-1, #banner-bg-2, #banner-bg-3 {
+  width: 100vw;
+  position: absolute;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+nav #nav-list button, .banner-content form button, .create-button, .contact-button {
+  background-color: #81d398;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+main, nav {
+  padding: 0 8em;
+}
+
+nav, #banner-bg-2, #home, #banner-bg-3, #create-account, #our-services, #ready {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/************ARE YOUR READY? **********/
+#ready {
+  margin-top: 2.5em;
+}
+
+#ready div:first-child {
+  line-height: .9em;
+  font-size: .9em;
+}
+
+#ready div:first-child > h2:first-child {
+  color: #726fdf;
+}
+
+#ready div:first-child > h2:last-child {
+  line-height: 1em;
+  color: #7552e3;
+}
+
+#ready div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+}
+
+#banner-bg-1, #banner-bg-2, #banner-bg-3 {
+  width: 100vw;
+  position: absolute;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+nav #nav-list button, .banner-content form button, .create-button, .contact-button {
+  background-color: #81d398;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+main, nav {
+  padding: 0 8em;
+}
+
+nav, #banner-bg-2, #home, #banner-bg-3, #create-account, #our-services, #ready {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /***********FOOTER************/
 #footer {
   margin: 2.5em 0 0 0;
@@ -399,6 +597,11 @@ nav .nav-list button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 .5em;
+}
+
+#footer .col a:hover {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 #footer .col:last-child {
@@ -471,6 +674,39 @@ nav .nav-list button {
   background-color: #f6f9fc;
 }
 
+#banner-bg-1, #banner-bg-2, #banner-bg-3 {
+  width: 100vw;
+  position: absolute;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+nav #nav-list button, .banner-content form button, .create-button, .contact-button {
+  background-color: #81d398;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+main, nav {
+  padding: 0 8em;
+}
+
+nav, #banner-bg-2, #home, #banner-bg-3, #create-account, #our-services, #ready {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/******************MEDIA QUERIES*************************/
 @media screen and (max-width: 900px) {
   #ready div:nth-child(2) {
     -webkit-box-orient: vertical;
@@ -486,6 +722,22 @@ nav .nav-list button {
   }
   #ready div:nth-child(2) button {
     margin: 1em 0;
+  }
+  #nav-list {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  #nav-list ul li {
+    display: block;
+    text-align: right;
+    position: relative;
+    top: 50px;
+  }
+  #nav-list ul button {
+    position: relative;
+    right: 30px;
+    top: -100px;
   }
 }
 

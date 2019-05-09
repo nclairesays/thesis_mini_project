@@ -1,17 +1,32 @@
-// $primary-purple: #726fdf;
-// $darker-purple: #7552e3;
-// $darkest-purple:#7430d3;
-// $accent-green: #81d398;
+$primary-purple: #726fdf;
+$darker-purple: #7552e3;
+$darkest-purple:#7430d3;
+$accent-green: #81d398;
+$main-text: #5e5d5d;
+$light-text: #8f8f8f;
+$light-color: #fcfcfd;
 
-// %banner-shared {
-//     width: 100vw;
-//     position: absolute;
-//     transform: skewY(-10deg);
-//     transform-origin: top left;
-// }
 
-// %button-shared {
-//     background-color: $accent-green;
-//     color: white;
-//     border-radius: 10px;
-// } 
+%banner-shared {
+    width: 100vw;
+    position: absolute;
+    transform-origin: top left;
+}
+
+%button-shared {
+    background-color: $accent-green;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition-duration: 1s;
+} 
+
+%padding-shared {
+    padding: 0 8em;
+}
+
+%centered {
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}

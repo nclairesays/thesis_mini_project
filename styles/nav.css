@@ -1,0 +1,77 @@
+nav #nav-list button {
+  background-color: #81d398;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+nav {
+  padding: 0 8em;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/************** NAVIGATION ****************/
+nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  z-index: 10;
+}
+
+nav #nav-logo {
+  color: white;
+  font-size: 1.5em;
+}
+
+nav #nav-list {
+  text-align: center;
+}
+
+nav #nav-list ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+nav #nav-list li {
+  cursor: pointer;
+  width: 90px;
+  display: inline-block;
+  padding: 3px 0;
+  list-style-type: none;
+}
+
+nav #nav-list li a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+nav #nav-list li a:hover {
+  color: #81d398;
+}
+
+nav #nav-list button {
+  width: 120px;
+  padding: 10px 0;
+  font-size: 1em;
+}
+/*# sourceMappingURL=nav.css.map */

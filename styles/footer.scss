@@ -1,0 +1,86 @@
+@import './partials';
+
+
+/***********FOOTER************/
+
+#footer {
+    margin: 2.5em 0 0 0;
+    padding: 3em 10em;
+    background-color: $primary-purple;
+    font-size: .7em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    color: white;
+   
+    & .col {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 .5em;
+
+        & a:hover {
+            transition-duration: .5s;
+        }
+        
+    }
+
+    & .col:last-child{
+        justify-content: flex-start;
+        flex: .1;
+    }
+
+    h4 {
+        margin: .5em 0;
+        font-weight: 700;
+    }
+
+    p {
+        margin: .5em 0;
+        & a {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                color: $accent-green
+            }
+        }
+    }
+
+    #contact-info {
+        display: flex;
+        justify-content: flex-start;
+        & > * {
+            line-height: 1em
+        }
+    }
+
+    #social-media {
+        width: 20px;
+        & > * {
+        margin: .5em 0;
+        width: 16px;
+        height: 16px;  
+        }
+    }
+
+    .icon {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+    }
+    
+}
+
+#footer-bg {
+    position: fixed;
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    transform: skewY(-10deg);
+    transform-origin: bottom right;
+    background-color: #f6f9fc;
+}
