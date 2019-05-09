@@ -311,7 +311,8 @@ nav {
             color: $primary-purple;
         }
         & > h2:last-child {
-            color: $darker-purple;
+        line-height: 1em;
+        color: $darker-purple;
         }
     }
 
@@ -319,6 +320,7 @@ nav {
     & div:nth-child(2){
         display: flex;
         flex: 1;
+        width: 100%
     }
     
 
@@ -346,14 +348,6 @@ nav {
     }
 
 }
-// .flex-grid {
-//     display: flex;
-//     flex-wrap: wrap;
-
-//     & .col {
-//         flex: 1;
-//     }
-// }
 
 .services-wrapper {
     display: flex;
@@ -424,6 +418,7 @@ nav {
         justify-content: space-between;
         // min-width: 10%;
         margin: 0 .5em;
+        
     }
 
     & .col:last-child{
@@ -453,7 +448,7 @@ nav {
         display: flex;
         justify-content: flex-start;
         & > * {
-            line-height: 2em
+            line-height: 1em
         }
     }
 
@@ -486,11 +481,43 @@ nav {
     background-color: #f6f9fc;
 }
 
-
+@media screen and (max-width: 900px) {
+    #ready {
+        & div:nth-child(2){
+            flex-direction: column;
+            align-items:  center;
+            justify-content: center;
+            & button {
+                margin: 1em 0;
+            }   
+            
+        }
+    }
+}
 
 @media screen and (max-width: 800px) {
     main, nav {
         padding: 2em 4em;
+    }
+    #ready {
+        flex-direction: column;
+    }
+
+    #footer {
+        padding: 3em 5em;
+        margin: 0;
+        flex-flow: column wrap;
+        height: 370px;
+        line-height: 1em;
+        .col {
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+
+        // img {
+        //     display: none;
+        // }      
     }
 }
 
@@ -498,7 +525,6 @@ nav {
 
 @media screen and (max-width: 650px) {
 
-    
     main, nav {
         padding: 2em 3em;
     }
@@ -514,11 +540,28 @@ nav {
         width: 100%;
     }
     
+    #footer {
+        height: 550px;
+        padding: 1em
+
+    }
+    
+    
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     main, nav {
         padding: 2em 2em;
+    }
+    #footer {
+        flex-wrap: nowrap;
+
+        & .col:last-child{
+            justify-self: center;
+            align-self: center;
+            flex: .1;
+        }
+       
     }
 
 }
