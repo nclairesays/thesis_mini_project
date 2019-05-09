@@ -39,6 +39,12 @@ nav, #banner-bg-2, #home, #banner-bg-3, #create-account, #ready, #our-services {
           align-items: center;
 }
 
+.icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
 /********************BODY*********************/
 html, body {
   width: 100vw;
@@ -229,6 +235,11 @@ nav #nav-list button {
   font-size: .8em;
 }
 
+#banner-bg-3 > div img {
+  -webkit-box-shadow: 1px 3px 5px 1px #8f8f8f;
+          box-shadow: 1px 3px 5px 1px #8f8f8f;
+}
+
 #learn-more > a > img {
   width: 60px;
   height: 60px;
@@ -387,6 +398,12 @@ nav #nav-list button {
   line-height: 0;
 }
 
+.card span h4 .icon {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
 /***********FOOTER************/
 #footer {
   margin: 2.5em 0 0 0;
@@ -478,12 +495,6 @@ nav #nav-list button {
   margin: .5em 0;
   width: 16px;
   height: 16px;
-}
-
-#footer .icon {
-  width: 16px;
-  height: 16px;
-  display: inline-block;
 }
 
 #footer-bg {

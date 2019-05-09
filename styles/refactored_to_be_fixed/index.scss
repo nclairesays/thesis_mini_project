@@ -1,4 +1,4 @@
-@import './_partials';
+@import '../_partials';
 // @import './body.scss';
 // @import './nav.scss';
 // @import './banner.scss';
@@ -206,6 +206,10 @@ nav {
         transform: skewY(10deg); 
         color: white;
         font-size: .8em;
+
+        & img {
+            box-shadow: 1px 3px 5px 1px $light-text;
+        }
 
     }
 }

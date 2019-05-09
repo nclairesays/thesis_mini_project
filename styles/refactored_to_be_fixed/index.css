@@ -39,6 +39,12 @@ nav, #banner-bg-2, #home, #banner-bg-3, #create-account, #ready, #our-services {
           align-items: center;
 }
 
+.icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
 /********************BODY*********************/
 html, body {
   width: 100vw;
@@ -227,6 +233,11 @@ nav #nav-list button {
           transform: skewY(10deg);
   color: white;
   font-size: .8em;
+}
+
+#banner-bg-3 > div img {
+  -webkit-box-shadow: 1px 3px 5px 1px #8f8f8f;
+          box-shadow: 1px 3px 5px 1px #8f8f8f;
 }
 
 #learn-more > a > img {

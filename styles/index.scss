@@ -187,6 +187,10 @@ nav {
         color: white;
         font-size: .8em;
 
+        & img {
+            box-shadow: 1px 3px 5px 1px $light-text;
+        }
+
     }
 }
 
@@ -333,6 +337,13 @@ nav {
         margin: 0 10px;
         & h4 {
             line-height: 0;
+                    
+        & .icon {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+        }
+
         }
     }
 }
@@ -401,13 +412,6 @@ nav {
         height: 16px;  
         }
     }
-
-    .icon {
-        width: 16px;
-        height: 16px;
-        display: inline-block;
-    }
-    
 }
 
 #footer-bg {
